@@ -18,6 +18,8 @@ Test against the declared variable
 Define a variable: 
 If the variable is true print true, if false its falsy, if null, is faulsy, etc */
 
+
+console.log("It's Truthy")
 let Tru = "" //declare variable
 
 if (Tru === "I am a string"){ //if this is the value that is put into the variable display true - repeat
@@ -34,9 +36,9 @@ if (Tru === "I am a string"){ //if this is the value that is put into the variab
     console.log("The empty string is falsy (the only falsy string)")    
 }
 
-/* 
 
-GreaterthanFive
+/* 
+Number line
 
 Using if/else if/else statements, JavaScript code in a script tag that takes the sum of two numbers and prints the corresponding result:
 
@@ -60,15 +62,14 @@ If sum then print condition
 If number 1 + Number 2 = the sum of the numbers print the required dialog.
 add another variable to house the output?
 
-/*if (num1 + num2 > 100){
-    console.log(sum + " is greater than 100")
-} else if (num1 + num2) {
- console.log("It works")
-}*/
+*/
 
-let num1 = -5;
+console.log("Number Line")
+
+let num1 = -1000;
 let num2 = 0;
 let sum = num1+num2;
+
 
 if (sum < -1000){
     console.log(sum + " is less than -1000")
@@ -76,11 +77,33 @@ if (sum < -1000){
     console.log(sum + " is a negative number")
  } else if (sum === 0){
     console.log(sum + " is equal to 0")
- } else if (sum > 100){
-    console.log(sum + " is greater than 100")
- } else if (sum > 0){
+ } else if (sum > 0 && sum <= 100){
     console.log(sum + " is larger than 0")
+ } else {
+    console.log(sum + " is greater than 100")
  }
+
+
+ /*
+ 
+ Greater than five
+Using if/else statements, JavaScript code in a script tag that prints true if both parameters are greater or equal to 5.
+
+
+
+ */
+
+console.log("GreaterThan5") 
+
+let num4 = 5;
+let num5 = 6;
+
+if (num4+num5 >= 5) {
+  console.log("true")
+} else {
+    console.log("false")
+}
+
 
 /*
 
@@ -100,28 +123,17 @@ param1A	param1B	param2A	param2B	Expected Print
 If two of the pairs are equal to true, print true - otherwise print false
 Not sure how to put the variables together to be tested together in the if, then statement
 Could create a function, but it is not a part of the assignment.
-
-
-let param1A = 0;
-let param1B = 5;
-let param2A = "dog";
-let param2B = "dawg";
-
-
-if (param1A, param1B, param2A, param2B === 0 || false){
-    console.log("false")
-} else {
-    console.log("true")
-}
-
 */
 
-let param1A = "cat";
-let param1B = "cat";
-let param2A = 6;
-let param2B = "6";
+console.log("Pair and Compare")
 
-if (param1A || param1B || param2A || param2B) {
+
+let param1A = "five";
+let param1B = "5";
+let param2A = 6;
+let param2B = "dawg";
+
+if (param1A == param1B || param2A == param2B) {
     console.log("true");
 } else {
     console.log("false");
